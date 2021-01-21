@@ -6,6 +6,16 @@
     <title>romerodi</title>
 </head>
 <body>
-    <h1>Hello World!!!</h1>
+    <h1 onclick="testing()">Hello World!!!</h1>
+    <a href="(mySavedData)" target="blank">From Local Storage</a>
+    <script>
+        function testing (){
+            console.log(window.location.href);
+            var mySavedData = localStorage.siteUrl;
+            localStorage.siteUrl = window.location.href;
+            console.log(localStorage.siteUrl)
+        }
+    </script>
+    
 </body>
 </html>
